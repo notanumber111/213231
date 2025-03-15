@@ -59,8 +59,6 @@ steps:
     uses: actions/setup-java@v3
     with:
       java-version: '17'
-  - name: Make gradlew executable  # <-- Add this step
-    run: chmod +x gradlew
   - name: Build with Gradle
     run: ./gradlew build
 
